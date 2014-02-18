@@ -1,13 +1,13 @@
 title: ZZZ
 tagline: 'Time to understand the world'
 description: 'Geographer, environmental scientist, cyclist'
-url: http://zhumeilawyer.com
+url: http://192.168.10.202:4000/
 name: ZZZ
 email: zhumeilawyer@163.com
 
 
 ipygments: true
-comments: true 
+comments: true
 markdown: redcarpet
 paginate: 5
 
