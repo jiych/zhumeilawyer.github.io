@@ -1,44 +1,86 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
-    <title>ZZZ | {{ page.title }}</title>
-	<link rel="stylesheet" href="http://legalwebpro.s3.amazonaws.com/lwp/10/blue/style.css" type="text/css" media="screen" />
-    <script src="/javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/javascripts/jquery.github.js" type="text/javascript" charset="utf-8"></script>
+    <title>朱梅律师 | {{ page.title }}</title>
+	  <link rel="stylesheet" href="/stylesheet/style.css" type="text/css" media="screen" />
+	  <style>
+#q {
+margin-left:30px;
+border: none;
+width: 222px;
+height: 26px;
+background-color: rgba(0, 0, 0, 0);
+font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
+font-size: 12px;
+line-height: 16px;
+outline: none;
+}
+    </style>
   </head>
 
   <body>
-  <div align="center">
-  <div id="wrap">
+    <div id="wrapper">
 
-  <div id="header">
-  <div id="title">
-  <h1><a href="{{ site.url }}">Law Offices of ZM</a></h1>
-  <div class="description">Description XXX</div>
-  </div>
-  <div id="pagenav">
-  <ul>
-  <li class="page_item page-item-1 current_page_item"><a href="{{ site.url }}" title="Home"><span>Home</span></a></li>
-  <li class="page_item page-item-2"><a href="{{ site.url }}/contact.html" title="Family Law Basics"><span>Family Law Basics</span></a></li>
-  <li class="page_item page-item-3"><a href="{{ site.url }}/contact.html" title="Practice Areas"><span>Practice Areas</span></a></li>
-  <li class="page_item page-item-4"><a href="{{ site.url }}/contact.html" title="Professional Profile"><span>Professional Profile</span></a></li>
-  <li class="page_item page-item-5"><a href="{{ site.url }}/news.html" title="News"><span>News</span></a></li>
-  <li class="page_item page-item-6"><a href="{{ site.url }}/contact.html" title="Contact"><span>Contact</span></a></li>
-  </ul>
-  </div>
-  <div class="clear"></div>
-  </div><!-- end of header -->
+     <div id="header">
+     </div> <!-- end #header -->
 
-  <div id="content">
-  <div class="post">
-	{{ content }}
+     <div id="menu">
+     <ul>
+     <li class="page_item {% if page.current == 'index' %} current_page_item {% endif %} "><a href="{{ site.url }}" title="首页"><span>首页</span></a></li>
+     <li class="page_item {% if page.current == 'hyjc' %} current_page_item {% endif %} "><a href="{{ site.url }}/hyjc.html" title="婚姻继承"><span>婚姻继承</span></a></li>
+     <li class="page_item {% if page.current == 'ldjf' %} current_page_item {% endif %}"><a href="{{ site.url }}/ldjf.html" title="劳动纠纷"><span>劳动纠纷</span></a></li>
+     <li class="page_item {% if page.current == 'xsbh' %} current_page_item {% endif %}"><a href="{{ site.url }}/xsbh.html" title="刑事辩护"><span>刑事辩护</span></a></li>
+     <li class="page_item {% if page.current == 'flfg' %} current_page_item {% endif %}"><a href="{{ site.url }}/flfg.html" title="法律法规"><span>法律法规</span></a></li>
+     <li class="page_item {% if page.current == 'zxzx' %} current_page_item {% endif %}"><a href="{{ site.url }}/zxzx.html" title="在线咨询"><span>在线咨询</span></a></li>
+     <li class="page_item {% if page.current == 'gyw' %} current_page_item {% endif %}"><a href="{{ site.url }}/gyw.html" title="关于我"><span>关于我</span></a></li>
+
+		 <form onsubmit="return dispatch()"><div style="margin-left:65px; margin-top:20px;width: 186px; height: 28px; background-size: 276px 28px; background-image: url('/images/qbar_light@2x.png'); background-repeat: no-repeat; display: inline-block;"><input margin-left:30px;type="text" maxlength="40" name="q" id="q" value=""/></div></form>
+     </ul>
+		 <!-- ----------------- -->
+  <script type="text/javascript">
+  var dispatch = function(){
+  		q = document.getElementById("q");
+  		if(q.value != ""){
+  				window.open('http://www.google.com/search?q=site:zhumeilawyer.com/%20' + q.value, "_blank");
+  				return false;
+  		} else {
+  				return false;
+  		}
+  }
+  </script>
+  <div id="search">
+  
   </div>
-  </div>
-  <div class="clear"></div>
-  <div id="footer">Copyright &copy; 2014 zhumeilawyer.com | Code by <a href="http://jiych.github.io/" title="jiych">jiych</a></div>
-  </div><!-- end of wrap -->
-  </div><!-- end of center -->
+		 <!-- ----------------- -->
+     </div> <!-- end #menu -->
+
+
+	   <div id="page"> <div id="banner">&nbsp;</div>
+	   <div id="sidebar">
+       <ul>
+				<li>执业证号：137201111809603</li>
+				<li>执业机构：江苏钟山明镜律师事务所</li>
+				<li>联系地址：汉中门大街301号</li>
+				<li>办公电话：025-84690699</li>
+				<x>13851763164</x>
+				<li>邮箱：<a href="mailto:zhumeilawyer@163.com">zhumeilawyer@163.com</a></li>
+       </ul>
+		 </div> <!-- end #sidebar -->
+
+	   {{ content }}
+
+
+		 <div style="clear: both;">&nbsp;</div>
+     </div> <!-- end #page -->
+
+  	 <div id="footer">Copyright &copy; 2014 zhumeilawyer.com | Code by <a href="http://jiych.github.io/" title="jiych">jiych</a></div>
+  </div> <!-- end #wrapper -->
+
+	<script>
+	  document.getElementById('header').innerHTML = '<span style="padding-top:18px;float:right;font-family:arial,sans-serif;color:#FFFFFF;font-size:15px;"><span style="font-size:20px">免费咨询电话</span><br />13851763164<br />025-84690699<br /></span>';
+	</script>
+</body>
 </html>
