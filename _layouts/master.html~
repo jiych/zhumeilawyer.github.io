@@ -4,21 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
-		<meta name="description" content="南京朱梅律师，致力于承办婚姻继承、劳动纠纷、刑事辩护、法律法规等各类案件。立志成为南京最好律师。" />
-		<meta name="keywords", content="南京好律师，南京律师，朱梅律师，南京维权律师，婚姻继承，劳动纠纷，刑事辩护，法律法规，在线咨询" />
     <title>朱梅律师 | {{ page.title }}</title>
 		<link rel="shortcut icon" href="/images/logo.jpg">
 	  <link rel="stylesheet" href="/stylesheet/style.css" type="text/css" media="screen" />
-		<script type="text/javascript" src="/js/jquery.js"></script>
-		<script type="text/javascript" src="/js/easySlider1.7.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){	
-					$("#slider").easySlider({
-							auto: true, 
-							continuous: true
-		  });
-		});	
-		</script>
 	  <style>
 #banner {
 width: 870px;
@@ -78,22 +66,10 @@ outline: none;
 		 <!-- ----------------- -->
      </div> <!-- end #menu -->
 
+
 		 <div id="page">
 			{% if page.current == 'index' %}
-			<div id="banner">
-		<div id="slider">
-	 <ul>				
- <li><a href="#"><img src="/images/index.jpg" alt="" title="首页"/></a></li>
-	<li><a href="#"><img src="/images/hyjc.jpg" alt="" title="婚姻继承"/></a></li>
-	<li><a href="#"><img src="/images/ldjf.jpg" alt="" title="劳动纠纷"/></a></li>
-	<li><a href="#"><img src="/images/xsbh.jpg" alt="" title="刑事辩护"/></a></li>
-	<li><a href="#"><img src="/images/flfg.jpg" alt="" title="法律法规"/></a></li>
-	<li><a href="#"><img src="/images/zxzx.jpg" alt="" title="在线咨询"/></a></li>
-	<li><a href="#"><img src="/images/gyw.jpg" alt="" title="关于我"/></a></li>
-	<li><a href="#"><img src="/images/cylj.jpg" alt="" title="常用链接"/></a></li>
-																																											</ul>
-	</div>
-																																									</div>
+				<div id="banner" style="background: url(/images/index.jpg) no-repeat left top;">&nbsp;</div>
 			{% elsif page.current == 'hyjc' %}
 				<div id="banner" style="background: url(/images/hyjc.jpg) no-repeat left top;">&nbsp;</div>
 			{% elsif page.current == 'ldjf' %}

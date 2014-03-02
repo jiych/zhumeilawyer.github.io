@@ -425,7 +425,7 @@ padding:3px;
 		list-style:none;
 		}
 	#slider li, #slider img{ 
-		width:870px;
+		width:880px;
 		height:180px;
 		overflow:hidden;
 		}	

@@ -3,13 +3,14 @@ title: 法律法规
 layout: master
 current: flfg
 ---
-
+ 
+<div class='post'>
+<h2 class="title">法律法规</h2>
 {% for post in site.categories."flfg" %}
-	<div class='post'>
       <tr>
-	  	<small>{{ post.date | date: "%Y年%m月%d日" }}</small><br>
-        <a href='{{ post.url }}'>{{ post.title }}</a>
+	  	<small>{{ post.date | date: "%Y年%m月%d日" }}</small></br>
+			<a href='{{ post.url }}'>{{ post.title }}</a></br>
 			</tr>
-	</div>
 {% endfor %}
+</div>
 
