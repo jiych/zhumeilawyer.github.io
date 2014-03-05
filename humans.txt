@@ -1,0 +1,11 @@
+/* TEAM */
+Owner: zhumei
+Contact: zhumeilawyer@163.com
+Location: NanJing, China
+
+/* THANKS */
+This blog is designed by my bf,see github.com/jiych
+
+/* SITE */
+Last update: {{ site.time | date: "%Y/%m/%d" }}
+Language: English / Chinese
