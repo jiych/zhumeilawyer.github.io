@@ -7,5 +7,4 @@ Location: NanJing, China
 This blog is designed by my bf,see github.com/jiych
 
 /* SITE */
-Last update: {{ site.time | date: "%Y/%m/%d" }}
 Language: English / Chinese
