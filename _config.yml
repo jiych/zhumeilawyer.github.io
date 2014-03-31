@@ -5,6 +5,7 @@ url: zhumeilawyer.com
 name: ZZZ
 email: zhumeilawyer@163.com
 encoding: utf-8
+ASSETS_PATH : http://zhumeilawyer.qiniudn.com
 
 ipygments: true
 comments: true

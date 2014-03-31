@@ -8,10 +8,10 @@
 		<meta name="description" content="南京朱梅律师，致力于承办婚姻继承、劳动纠纷、刑事辩护、法律法规等各类案件。立志成为南京最好律师。" />
 		<meta name="keywords", content="南京好律师，南京律师，朱梅律师，南京维权律师，婚姻继承，劳动纠纷，刑事辩护，法律法规，在线咨询" />
     <title>朱梅律师 | {{ page.title }}</title>
-		<link rel="shortcut icon" href="/images/logo.jpg">
-	  <link rel="stylesheet" href="/stylesheet/style.css" type="text/css" media="screen" />
-		<script type="text/javascript" src="/js/jquery.js"></script>
-		<script type="text/javascript" src="/js/easySlider1.7.js"></script>
+		<link rel="shortcut icon" href="{{site.ASSETS_PATH}}/images/logo.jpg">
+	  <link rel="stylesheet" href="{{site.ASSETS_PATH}}/stylesheet/style.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="{{site.ASSETS_PATH}}/js/jquery.js"></script>
+		<script type="text/javascript" src="{{site.ASSETS_PATH}}/js/easySlider1.7.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){	
 					$("#slider").easySlider({
@@ -58,7 +58,7 @@ outline: none;
      <li class="page_item {% if page.current == 'gyw' %} current_page_item {% endif %}"><a href="/gyw.html" title="关于我"><span>关于我</span></a></li>
      <li class="page_item {% if page.current == 'cylj' %} current_page_item {% endif %}"><a href="/cylj.html" title="常用链接"><span>常用链接</span></a></li>
 
-		 <form onsubmit="return dispatch()"><div style="margin-left:25px; margin-top:20px;width: 132px; height: 28px; background-size: 276px 28px; background-image: url('/images/qbar_light@2x.png'); background-repeat: no-repeat; display: inline-block;"><input margin-left:30px;type="text" maxlength="40" name="q" id="q" value=""/></div></form>
+		 <form onsubmit="return dispatch()"><div style="margin-left:25px; margin-top:20px;width: 132px; height: 28px; background-size: 276px 28px; background-image: url('{{site.ASSETS_PATH}}/images/qbar_light@2x.png'); background-repeat: no-repeat; display: inline-block;"><input margin-left:30px;type="text" maxlength="40" name="q" id="q" value=""/></div></form>
      </ul>
 		 <!-- ----------------- -->
   <script type="text/javascript">
@@ -84,31 +84,31 @@ outline: none;
 			<div id="banner">
 		<div id="slider">
 	 <ul>				
- <li><a href="/"><img src="/images/index.jpg" alt="" title="首页"/></a></li>
-	<li><a href="/hyjc.html"><img src="/images/hyjc.jpg" alt="" title="婚姻继承"/></a></li>
-	<li><a href="ldjf.html"><img src="/images/ldjf.jpg" alt="" title="劳动纠纷"/></a></li>
-	<li><a href="/xsbh.html"><img src="/images/xsbh.jpg" alt="" title="刑事辩护"/></a></li>
-	<li><a href="/flgfg.html"><img src="/images/flfg.jpg" alt="" title="法律法规"/></a></li>
-	<li><a href="/zxzx.html"><img src="/images/zxzx.jpg" alt="" title="在线咨询"/></a></li>
-	<li><a href="/gyw.html"><img src="/images/gyw.jpg" alt="" title="关于我"/></a></li>
-	<li><a href="/cylj.html"><img src="/images/cylj.jpg" alt="" title="常用链接"/></a></li>
+ <li><a href="/"><img src="{{site.ASSETS_PATH}}/images/index.jpg" alt="" title="首页"/></a></li>
+	<li><a href="/hyjc.html"><img src="{{site.ASSETS_PATH}}/images/hyjc.jpg" alt="" title="婚姻继承"/></a></li>
+	<li><a href="/ldjf.html"><img src="{{site.ASSETS_PATH}}/images/ldjf.jpg" alt="" title="劳动纠纷"/></a></li>
+	<li><a href="/xsbh.html"><img src="{{site.ASSETS_PATH}}/images/xsbh.jpg" alt="" title="刑事辩护"/></a></li>
+	<li><a href="/flgfg.html"><img src="{{site.ASSETS_PATH}}/images/flfg.jpg" alt="" title="法律法规"/></a></li>
+	<li><a href="/zxzx.html"><img src="{{site.ASSETS_PATH}}/images/zxzx.jpg" alt="" title="在线咨询"/></a></li>
+	<li><a href="/gyw.html"><img src="{{site.ASSETS_PATH}}/images/gyw.jpg" alt="" title="关于我"/></a></li>
+	<li><a href="/cylj.html"><img src="{{site.ASSETS_PATH}}/images/cylj.jpg" alt="" title="常用链接"/></a></li>
 																																											</ul>
 	</div>
 																																									</div>
 			{% elsif page.current == 'hyjc' %}
-				<div id="banner" style="background: url(/images/hyjc.jpg) no-repeat left top;">&nbsp;</div>
+				<div id="banner" style="background: url({{site.ASSETS_PATH}}/images/hyjc.jpg) no-repeat left top;">&nbsp;</div>
 			{% elsif page.current == 'ldjf' %}
-				<div id="banner" style="background: url(/images/ldjf.jpg) no-repeat left top;">&nbsp;</div>
+				<div id="banner" style="background: url({{site.ASSETS_PATH}}/images/ldjf.jpg) no-repeat left top;">&nbsp;</div>
 			{% elsif page.current == 'xsbh' %}
-				 <div id="banner" style="background: url(/images/xsbh.jpg) no-repeat left top;">&nbsp;</div>
+				 <div id="banner" style="background: url({{site.ASSETS_PATH}}/images/xsbh.jpg) no-repeat left top;">&nbsp;</div>
 			{% elsif page.current == 'flfg' %}
-				 <div id="banner" style="background: url(/images/flfg.jpg) no-repeat left top;">&nbsp;</div>
+				 <div id="banner" style="background: url({{site.ASSETS_PATH}}/images/flfg.jpg) no-repeat left top;">&nbsp;</div>
 			{% elsif page.current == 'zxzx' %}
-				 <div id="banner" style="background: url(/images/zxzx.jpg) no-repeat left top;">&nbsp;</div>
+				 <div id="banner" style="background: url({{site.ASSETS_PATH}}/images/zxzx.jpg) no-repeat left top;">&nbsp;</div>
 			{% elsif page.current == 'gyw' %}
-				 <div id="banner" style="background: url(/images/gyw.jpg) no-repeat left top;">&nbsp;</div>
+				 <div id="banner" style="background: url({{site.ASSETS_PATH}}/images/gyw.jpg) no-repeat left top;">&nbsp;</div>
 			{% elsif page.current == 'cylj' %}
-				 <div id="banner" style="background: url(/images/cylj.jpg) no-repeat left top;">&nbsp;</div>
+				 <div id="banner" style="background: url({{site.ASSETS_PATH}}/images/cylj.jpg) no-repeat left top;">&nbsp;</div>
 		 {% endif %}
 	   <div id="sidebar">
        <ul>
