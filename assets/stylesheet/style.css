@@ -65,7 +65,7 @@ padding: 20px;
 width: 910px;
 height: 95px;
 margin: 0 auto;
-background-image: url(/images/xx.jpg);
+background-image: url(http://zhumeilawyer.qiniudn.com/assets/images/xx.jpg);
 background-repeat: no-repeat;
 text-align:center;
 }
@@ -143,7 +143,7 @@ width: 910px;
 height: 50px;
 margin: 0 auto;
 padding: 0;
-background: #565F68 url(images/img.jpg) no-repeat left top;
+background: #565F68 url(http://zhumeilawyer.qiniudn.com/assets/images/img.jpg) no-repeat left top;
 }
 
 #menu ul {
@@ -315,7 +315,7 @@ width: 910px;
 height: 20px;
 margin: 0 auto;
 padding: 20px 0 15px 0;
-background: url(images/img02.jpg) no-repeat left top;
+background: url(http://zhumeilawyer.qiniudn.com/assets/images/img02.jpg) no-repeat left top;
 font-family: Arial, Helvetica, sans-serif;
 color: #B2B2B2;
 }
