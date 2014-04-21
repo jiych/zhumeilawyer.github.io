@@ -9,7 +9,20 @@ ASSETS_PATH : http://zhumeilawyer.qiniudn.com
 
 ipygments: true
 comments: true
-markdown: kramdown
+#markdown: kramdown
+markdown: redcarpet
+safe: true
+lsi: false
+
+redcarpet:
+  extensions:
+    - with_toc_data
+    - hard_wrap
+    - no_intra_emphasis
+    - tables
+    - fenced_code_blocks
+    - autolink
+    
 paginate: 5
 
 scholar:
