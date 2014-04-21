@@ -28,5 +28,5 @@ paginate: 5
 scholar:
   bibliography_template: "%{reference}"
 
-kramdown:
-  input: GFM
+#kramdown:
+#  input: GFM
