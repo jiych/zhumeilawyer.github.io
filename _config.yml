@@ -9,10 +9,11 @@ ASSETS_PATH : http://zhumeilawyer.qiniudn.com
 
 ipygments: true
 comments: true
-markdown: redcarpet
+markdown: kramdown
 paginate: 5
 
 scholar:
   bibliography_template: "%{reference}"
 
-
+kramdown:
+  input: GFM
