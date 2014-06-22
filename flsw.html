@@ -1,0 +1,15 @@
+---
+title: 法律实务
+layout: master
+current: flsw
+---
+ 
+<div class='post'>
+<h2 class="title">法律实务</h2>
+{% for post in site.categories."flsw" %}
+      <tr>
+	  	<small>{{ post.date | date: "%Y年%m月%d日" }}</small></br>
+			<a href='{{ post.url }}'>{{ post.title }}</a></br>
+			</tr>
+{% endfor %}
+</div>
